@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" http-equiv="Content-Type">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>bootstrap</title>
+		<!--		引入bootstrap 的 css文件 里面定义了很多的css样式规则-->
+		<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" /><br />
+		<link rel="stylesheet" href="../assets/bootstrap/css/content.min.css" />
+		<link rel="stylesheet" href="../assets/bootstrap/css/style.css" />
+		<!--bootstrap的js 功能是  通过jquery框架实现的,所以需要先引入该框架-->
+		<script type="text/javascript" src="../assets/bootstrap/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=zYQZX9RyWj7kOZ6xXvAaIH3B32nGMuDv"></script>
+   	    <script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+
+	</head>
+
+	<body>
+		<!--导航栏开始-->
+		<nav class="navbar navbar-default navbar-fixed-top u-navbar">
+			<div class="container">
+				<div class="row">
+
+					<div class="navbar-header">
+						<a class="navbar-brand" href="aboutus.html">
+							<div class="logo-pc-div app-none">
+								<img src="../assets/image/logo.PNG" style="margin-left: 12px;" />
+							</div>
+						</a>
+					</div>
+					<!--navbar-header结束-->
+
+					<div class="navbar-collapse  navbar-right" style="height: auto;">
+						<!-- Main navigation -->
+						<ul class="nav navbar-nav">
+							<li><a href="aboutus.html">关于我们</a></li>
+							<li><a href="health.html">途欢健康</a></li>
+							<li><a href="corevalue.html">价值聚焦</a></li>
+							<li><a href="contactus.html">联系我们</a></li>
+						</ul>
+
+						<!--下载-->
+						<form id="downappform" class="navbar-form navbar-right" style="margin-right:0;">
+							<a class="pc-none" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.tuhuan.health">下载途欢健康</a>
+							<a class="app-none memberzhuc model-down" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-sm">下载途欢健康</a>
+						</form>
+					</div>
+					<!--导航栏结束-->
+				</div>
+				<!--row结束-->
+			</div>
+			<!--container结束-->
+		</nav>
+		<!--导航栏结束-->
+
+		<div class="global" style="min-height: 839px;">
+			<div id="allmap">
+				
+			</div>
+			<div class="container">
+				
+				<div class="title-comm">
+					<h3 class="welinain">联系我们</h3>
+					<p class="line"></p>
+					<p class="linh25 f12">
+						途欢—让优质医疗资源发挥更广泛价值，让大众获得更便捷可及、优质高效与值得信赖的医疗健康服务
+					</p>
+				</div>
+				<div class="row contactus">
+					<div class="col-md-4">
+						<div class="tcenter contactus-item">
+							<img src="../assets/image/lianxi.PNG" class="img-circle" />
+	                        <div>
+	                            <h4>联系客服</h4>
+	                            <p class="f12">电话：400-630-9191</p>
+	                            <p class="f12">邮箱：service@sctuhuan.com</p>
+	                            <p class="f12">工作时间：09：00~18：00（周一到周日）</p>
+	                        </div>
+						</div>
+					</div>
+					
+					<div class="col-md-4">
+	                    <div class="tcenter contactus-item">
+	                        <img src="../assets/image/hezuo.PNG" class="img-circle" />
+	                        <div>
+	                            <h4>商务合作</h4>
+	                            <p class="f12">联系人：张经理</p>
+	                            <p class="f12">电话：028-83226092</p>
+	                        </div>
+	                    </div>
+	                </div><!-- /.col-lg-4 -->
+	                
+	                <div class="col-md-4">
+	                    <div class="tcenter contactus-item">
+	                        <img src="../assets/image/dizhi.PNG" class="img-circle" />
+	                        <div>
+	                            <h4>公司地址</h4>
+	                            <p class="f12">四川省成都市高新区府城大道399号天府新谷7栋</p>
+	                            <p class="f12">邮编：610017</p>
+	                            <p class="f12">传真：028-83226095</p>
+	                        </div>
+	                    </div>
+	                </div><!-- /.col-lg-4 -->
+				</div>
+				<!--联系-->
+				
+		        <div class="app-none">
+		            <div class="title-comm">
+		                <h3 class="welinain">反馈意见</h3>
+		                <p class="line"></p>
+		                <p class="mtop40 mb8">感谢使用途欢产品和服务</p>
+		                <p class="linh25">您宝贵的建议是途欢前进的动力，我们期待您的反馈和建议</p>
+		            </div>
+		            <div class="feedback">
+		                <div class="feedback-l">
+		                    <img src="../assets/image/fkyj-cion.jpg" class="img-responsive" />
+		                </div>
+		                <div class="feedback-r">
+		                    <div class="feedback-submit-con">
+		                        <input type="text" id="TxtTel" class="inputdiv form-control" placeholder="请输入邮箱或电话号码，便于我们联系您" />
+		                        <textarea id="TxtContent" class=" form-control"></textarea>
+		                        <a href="#" id="btn-submit" class="global-btn" data-submit="1">提交</a>
+		                     </div>
+		                 </div>
+		            </div>
+		        </div>
+				<!--app-none-->
+			</div>
+			<!--container-->
+		</div>
+		<!--global结束-->
+
+		 <!-- footer begin -->
+		<div style="margin-left: 0px;">
+		<footer class="sho">
+		    <div class="container">
+		        <div class="row">
+		            <div class="ac-gf-footer-legal">
+		                <div class="footer-legal-links">
+		                    <a href="company.html">公司动态</a>
+		                    <div class="bor-line"></div>
+		                    <a href="joinus.html">加入我们</a>
+		                    <div class="bor-line"></div>
+		                    <a href="customres.html">企业用户</a>
+		                    <div class="bor-line"></div>
+		                    <a href="useragreement.html">用户使用协议</a>
+		                </div>
+		                <div class="footer-beizhu">Copyright &copy; 2018 RNG组所有</div>
+		            </div>
+		            <div class="footer-weixin">
+		                <div class="bt-example-popover">
+		                    <div class="popover top">
+		                        <div class="arrow"></div>
+		                        <div style="padding: 7px">
+		                            <figure class="erweima-logo-icon"></figure>
+		                        </div>
+		                    </div>
+		                </div>
+		                <figure class="weixin-logo-icon"></figure>
+		            </div>
+		            <div class="footer-weixin">
+		                <div class="bt-example-popover">
+		                    <div class="popover top">
+		                        <div class="arrow"></div>
+		                        <div style="padding: 7px">
+		                            <figure class="erweimaapp-logo-icon"></figure>
+		                        </div>
+		                    </div>
+		                </div>
+		                <figure class="shouji-logo-icon"></figure>
+		            </div>
+		        </div>
+		    </div>
+		</footer>
+		<!-- footer end -->
+		
+		<!-- 弹出微信框  -->
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		    <div class="modal-dialog modal-sm">
+		        <div class="modal-content" style="height: 580px;">
+		            <div style="width:580px; display: inline-block;">
+		                <div class="modal-header">
+		                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+		                </div>
+		                <div class="modal-body">
+		                    <figure class="pop-erweima">
+		                        <img src="../assets/image/erweima-app.svg" width="300" height="300" style="padding: 20px; border: 1px solid rgba(170, 170, 170, 0.3);">
+		                    </figure>
+		                    <div class="pop-erweima-text">
+		                        <p>请使用微信扫一扫</p>
+		                        <p>下载“途欢健康”App注册登录</p>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+		<div class="bg-div hide">
+		
+		</div>
+		
+		<style type="text/css">
+	        img[src='../assets/image/icon2.png'] {
+	            width: 50px;
+	            height: 50px;
+	        }
+    	</style>
+
+		
+		<script type="text/javascript">
+		     // 百度地图API功能
+		    var map = new BMap.Map("allmap", { enableMapClick: false });            // 创建Map实例
+		    //map.centerAndZoom(new BMap.Point(116.4035, 39.915), 8);  //初始化时，即可设置中心点和地图缩放级别。
+		    var point = new BMap.Point(104.063219, 30.592893);
+		    map.centerAndZoom(point, 17)
+		
+		    var myIcon = new BMap.Icon("../assets/image/icon2.png", new BMap.Size(50, 50));
+		
+		    var marker = new BMap.Marker(point, { icon: myIcon });  // 创建标注
+		    map.addOverlay(marker);               // 将标注添加到地图中
+		    marker.setAnimation(BMAP_PANORAMA_POI_NONE); //跳动的动画
+		
+		    map.enableScrollWheelZoom(true);
+		    map.disableDragging();     //禁止拖拽
+		    map.disableScrollWheelZoom();
+		    map.disableDoubleClickZoom();
+		    map.disablePinchToZoom();
+		
+		    var sContent = "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>天府新谷7号楼</h4>" +
+			"</div>";
+		    var infoWindow = new BMap.InfoWindow(sContent);
+		    marker.addEventListener("click", function () {
+		        this.openInfoWindow(infoWindow);
+		        //图片加载完毕重绘infowindow
+		        document.getElementById('imgDemo').onload = function () {
+		            infoWindow.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+		        }
+		    });
+		    map.setMapStyle({
+		        styleJson: [
+		          {
+		              "featureType": "poi",
+		              "elementType": "all",
+		              "stylers": {
+		                  "visibility": "off"
+		              }
+		          }
+		        ]
+		    });
+
+		</script>
+	</body>
+
+</html>

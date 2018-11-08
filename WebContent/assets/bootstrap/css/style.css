@@ -1,0 +1,200 @@
+/*加入我们开始*/
+
+.bg-div {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 50;
+}
+
+.body-static {
+	overflow: hidden !important;
+}
+
+.bg-div.hide {
+	display: none;
+}
+
+.table ul {
+	margin-top: 0;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.table ul li {
+	float: left;
+	width: 100%;
+}
+
+.table .thead ul>li {
+	font-weight: bold;
+	border-bottom: 2px solid #3bbe7a;
+	width: 100%;
+}
+
+.table .thead ul>li>div>span {
+	padding: 20px 25px;
+	display: inline-block;
+	color: #aaa;
+}
+
+.table .tbody ul>li .link {
+	font-size: 16px;
+	border-top: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.table .tbody ul>li.open .link {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tbody ul#accordion>li {
+	border-bottom: 1px solid rgba(170, 170, 170, .3);
+	cursor: pointer;
+}
+
+.table .tbody ul>li>div>span {
+	padding: 20px 25px;
+	display: inline-block;
+	color: #666;
+	float: left;
+}
+
+.table .tbody ul>li .link:hover {
+	background-color: #f0f0f0;
+}
+
+.submenu {
+	padding-left: 50px;
+	background-color: #fff;
+	padding-bottom: 50px;
+}
+
+.submenu .title {
+	padding-top: 40px;
+	font-weight: bold;
+}
+
+.badge {
+	background-color: rgba(59, 190, 122, .2);
+	border: 1px solid #3bbe7a;
+	color: #3bbe7a;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.glyphicon-menu-down {
+	font-size: 1px;
+	margin-left: 10px;
+}
+
+.glyphicon-menu-down {
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	transition: all .25s ease-out;
+}
+
+
+/*.glyphicon {
+            top: -15px;
+            left: 151px;
+        }*/
+
+.btn-group-justified>.btn-group {
+	padding: 20px 25px;
+	color: #aaa;
+}
+
+#accordion .btn-group-justified>.btn-group {
+	color: #666;
+	font-size: 16px;
+}
+
+#accordion .open .glyphicon-menu-down {
+	transform: rotate(180deg);
+}
+
+.glyphicon {
+	display: none;
+}
+
+#accordion li.hover .glyphicon-menu-down {
+	display: inline-block !important;
+}
+
+
+/*加入我们结束*/
+
+
+/*公司动态的错误页面处理*/
+
+img[src='/images/defaultpic.gif'] {
+	display: none;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+	background-color: rgba(59, 190, 122, .9) !important;
+	border-color: rgba(59, 190, 122, .9) !important;
+}
+
+
+/*微信弹出框*/
+
+.bg-div {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 50;
+}
+
+.body-static {
+	overflow: hidden !important;
+}
+
+.bg-div.hide {
+	display: none;
+}
+
+
+/*联系我们*/
+
+#allmap {
+	width: 100%;
+	height: 500px;
+}
+
+p {
+	margin-left: 5px;
+	font-size: 14px;
+}
+
+.BMap_mask {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+@media (max-width:767px) {
+	#allmap {
+		width: 100%;
+		height: 275px;
+		margin-top: 45px;
+	}
+}
+
+ .anchorBL {
+            display: none;
+        }

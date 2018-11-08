@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" http-equiv="Content-Type" >
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>health</title>
+		<!--		引入bootstrap 的 css文件 里面定义了很多的css样式规则-->
+		<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" /><br />
+		<link rel="stylesheet" href="../assets/bootstrap/css/content.min.css" />
+		<!--bootstrap的js 功能是  通过jquery框架实现的,所以需要先引入该框架-->
+		<script type="text/javascript" src="../assets/bootstrap/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+		<!--<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+		<link rel="stylesheet" href="../assets/bootstrap/css/style.css" />
+		<!-- 弹出微信框  /-->
+
+		<style type="text/css">
+		    .bg-div {
+		        position: fixed;
+		        top: 0;
+		        left: 0;
+		        width: 100%;
+		        height: 100%;
+		        background-color: rgba(0,0,0,.5);
+		        z-index: 50;
+		    }
+		
+		    .body-static {
+		        overflow: hidden !important;
+		    }
+		
+		    .bg-div.hide {
+		        display: none;
+		    }
+		</style>
+
+	</head>
+
+	<body>
+		<!--导航栏开始-->
+		<nav class="navbar navbar-default navbar-fixed-top u-navbar">
+			<div class="container">
+				<div class="row">					
+					<div class="navbar-header">			
+						<a class="navbar-brand" href="aboutus.html">					
+							<div class="logo-pc-div app-none">
+								<img src="../assets/image/logo.PNG" style="margin-left: 12px;"/>
+							</div>
+						</a>
+					</div><!--navbar-header结束-->
+					
+					<div class="navbar-collapse collapse navbar-right" style="height: auto;">
+						<!-- Main navigation -->
+						<ul class="nav navbar-nav">
+							<li><a href="aboutus.html">关于我们</a></li>
+							<li><a href="health.html">途欢健康</a></li>
+							<li><a href="corevalue.html">价值聚焦</a></li>
+							<li><a href="contactus.html">联系我们</a></li>
+						</ul>
+
+						<!--下载-->
+						<form id="downappform" class="navbar-form navbar-right" style="margin-right:0;">
+							<a class="pc-none" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.tuhuan.health">下载途欢健康</a>
+							<a class="app-none memberzhuc model-down" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-sm">下载途欢健康</a>
+						</form>
+					</div>
+					<!--导航栏结束-->
+				</div>
+				<!--row结束-->
+			</div>
+			<!--container结束-->
+		</nav>
+		<!--导航栏结束-->
+		
+		<!--轮播图开始-->
+		<div class="container-fluid">
+        	<div class="carousel slide" id="carousel-example-generic" class="carousel slide" dataride="carousel">
+        		
+        		<ol class="carousel-indicators">
+	                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	                
+               </ol>
+	        <div class="carousel-inner" role="listbox">
+	        <div class="item active">
+	        	<img src="../assets/image/2_health-banner1.jpg" alt=". . . ">
+		        <div class="carousel-caption">
+			        <h1 style="line-height: 20px;">科技助力医疗创新，实现更高协同价值</h1>
+			        <p>Technology that enables care</p>
+			        <p><button class="btn btn-success">开启健康人生</button></p>
+				</div>
+			</div>
+	       <div class="item">
+		       	<img src="../assets/image/3_health-banner2.jpg" alt=". . . ">
+		       	<div class="carousel-caption">
+			       <h1>选择途欢，拥有更具连续性的医疗健康服务获得更积极的健康成果</h1>
+			       <p>Choose us， Better care， Better health</p>
+			       <p><button class="btn btn-success">开启健康人生</button></p>
+				</div>
+			</div>
+			</div>
+				<a class="left carousel-control" href="#carousel-example-generic"role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic"role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div><!--轮播图结束-->
+		
+		<div class="container">
+	        <div class="title-comm-tuhuan">
+	        	<br /><br /><br />
+	            <h3 class="welinain">以专业维护您的健康</h3>
+	            <br />
+	            <p class="line lineheight"></p>
+	            <p align="center">途欢希冀于用专业的力量温情传递健康的意义，用医学的理念与技术帮助大众更科学的维护健康</p><br /><br /><br />
+	        </div>
+    	</div>
+    	
+    	<!--小轮播图开始-->
+    	
+    	<!--小轮播图结束-->
+		<div class="container">
+        <div class="row">
+            <div class="title-comm-tuhuan" style="font-size: 16px;    padding: 0 20px;">
+                <p class="mb8" align="center">途欢健康，协同三甲医院医生，依据您的近期体检报告及日常情况</p>
+                <p align="center">面对面评估您的健康状况及风险，制定健康（诊疗）计划</p><br />
+                <p class="line-tuhuan lineheight"></p><br />
+                <p class="tuhuan-text" align="center">既往，只体检，体检结果无人管</p><br /><br /><br />
+            </div>
+            <div class="tuhuan-item-comm">
+                <div class="col-xs-6" style="padding: 0;">
+                    <img src="../assets/image/15_tuhuan1_l2x.jpg" class="img-responsive">
+                </div>
+                <div class="col-xs-6" style="padding: 0;">
+                    <img src="../assets/image/16_tuhuan1_r2x.jpg" class="img-responsive">
+                </div>
+                <figure class="zljh-logo-icon ac-figure-icon"></figure>
+            </div>
+        </div>
+    	</div>
+    	<div class="container">
+        <div class="row">
+            <div class="title-comm-tuhuan" style="font-size: 16px;    padding: 0 20px;"><br /><br />
+                <p class="mb8" align="center">途欢健康，专业、系统、持续的记录您的健康</p>
+                <p align="center">包含历史体检数据、历史诊疗与日常监控随访数据等，成为您就诊时，医生诊疗决策最有力协助</p><br />
+                <p class="line-tuhuan lineheight"></p><br />
+                <p class="tuhuan-text" align="center">记录随手丢，病例找不到，医嘱记不住</p><br /><br /><br />
+            </div>
+            <div class="tuhuan-item-comm">
+                <div class="col-xs-6" style="padding: 0;">
+                    <img src="../assets/image/17_tuhuan3_l2x.jpg" class="img-responsive">
+                </div>
+                <div class="col-xs-6" style="padding: 0;">
+                    <img src="../assets/image/18_tuhuan4_r2x.jpg" class="img-responsive">
+                </div>
+                <figure class="hzsj-logo-icon ac-figure-icon"></figure>
+            </div>
+        </div>
+    </div>
+    	<div class="container">
+        <div class="row">
+            <div class="title-comm-tuhuan" style="font-size: 16px; padding: 0 20px;"><br /><br />
+                <p class="mb8" align="center">专业临床医学背景的途欢医生助理仿佛您的家人，时刻关注着您的健康</p>
+                <p align="center">通过主动持续的干预与管理，为您提供个体化的健康服务</p><br />
+                <p class="line-tuhuan lineheight"></p><br />
+                <p class="tuhuan-text" align="center">对健康关注，却因缺少专业知识而束手无策</p><br /><br /><br />
+            </div>
+            <div class="tuhuan-item-comm">
+                <div class="col-xs-6" style="padding: 0;">
+                    <img src="../assets/image/19_tuhuan5_l2x.jpg" class="img-responsive">
+                </div>
+                <div class="col-xs-6" style="padding: 0;">
+                    <img src="../assets/image/20_tuhuan6_r2x.jpg" class="img-responsive">
+                </div>
+                <div>
+                    <figure class="hzgl-logo-icon ac-figure-icon"></figure>
+                </div>
+            </div>
+        </div>
+    	</div>
+    	<div class="container">
+        <div class="row">
+            <div class="title-comm">
+                <h3 class="welinain">科技助力医疗创新,实现更高协同价值</h3><br />
+                <p class="line"></p>
+                <p class="mtop40 mb8">在途欢医疗健康管理平台的支持下</p>
+                <p class="mb8">以社区医院家庭医生及途欢个人专属健康顾问为中心，集合三甲医院顶尖专家、权威专科医生的“责任医疗团队”</p>
+                <p>共同为您和家人提供高度协同的主动管理式医疗健康服务：日常健康管理，健康风险评估与风险因素管理，医疗服务连接等</p>
+            </div>
+        </div>
+    </div>
+    <div class="fuwutixi-global">
+        <div class="container">
+            <div class="row" style="position:relative;">
+                <div class="fuwutixi-imgitem">
+                	<img src="../assets/image/1.jpg" class="img-responsive">                   
+                </div>
+                <div class="fuwutixi-imgitem" style="margin-top: 2%;"> 
+                	
+                </div>
+                <div class="vbox box-h-center box-v-center" style="width: 100%; height: 100%; position: absolute; top: 0;">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="title-comm">
+                <h3 class="welinain">以您为中心,更便捷的健康体验</h3>
+                <p class="line"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="foryou-center-row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="foryou-center">
+                        <img src="../assets/image/27_center-img-01.jpg" class="img-responsive">
+                        <p class="biaoti">更了解您</p>
+                        <p class="line"></p>
+                        <p>为您建立的个人电子健康档案，全面记录您的日常健康数据、医疗记录，是医生更精准诊疗的基础</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="foryou-center">
+                        <img src="../assets/image/28_center-img-02.jpg" class="img-responsive">
+                        <p class="biaoti">时刻关注您</p>
+                        <p class="line"></p>
+                        <p>将人工智能运用于健康数据的智能检测，持续、动态的管理您的健康数据，更早发现潜在健康风险</p>
+                    </div>
+                </div>
+
+                <div class="clearfix visible-xs-block"></div>
+
+                <div class="col-xs-6 col-sm-3">
+                    <div class="foryou-center">
+                        <img src="../assets/image/29_center-img-03.jpg" class="img-responsive">
+                        <p class="biaoti">离您更近</p>
+                        <p class="line"></p>
+                        <p>与熟悉您健康的途欢大夫、家庭医生、专属健康顾问进行在线咨询，随时随地获得更便捷的健康服务</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="foryou-center">
+                        <img src="../assets/image/30_center-img-04.jpg" class="img-responsive">
+                        <p class="biaoti">家人般守护您</p>
+                        <p class="line"></p>
+                        <p>健康顾问与家庭医生为您预判并连接您所适需医疗方案，帮助您获得更精准、更有效率的医疗服务</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title-comm">
+            <h3 class="welinain">用户的鼓励</h3>
+            <p class="line"></p>
+            <p class="mtop40">途欢健康、协同于现有的医疗服务体系，致力于构建更精准的医疗保健模式</p>
+        </div>
+ 		<div class="fuwutixi-imgitem">
+                <img src="../assets/image/2.jpg" class="img-responsive"> <br /><br />                  
+        </div>
+    </div>
+<div style="margin-left: 0px;">
+		<footer class="sho">
+		    <div class="container">
+		        <div class="row">
+		            <div class="ac-gf-footer-legal">
+		                <div class="footer-legal-links">
+		                    <a href="company.html">公司动态</a>
+		                    <div class="bor-line"></div>
+		                    <a href="joinus.html">加入我们</a>
+		                    <div class="bor-line"></div>
+		                    <a href="customres.html">企业用户</a>
+		                    <div class="bor-line"></div>
+		                    <a href="useragreement.html">用户使用协议</a>
+		                </div>
+		                <div class="footer-beizhu">Copyright &copy; 2018 RNG组所有</div>
+		            </div>
+		            <div class="footer-weixin">
+		                <div class="bt-example-popover">
+		                    <div class="popover top">
+		                        <div class="arrow"></div>
+		                        <div style="padding: 7px">
+		                            <figure class="erweima-logo-icon"></figure>
+		                        </div>
+		                    </div>
+		                </div>
+		                <figure class="weixin-logo-icon"></figure>
+		            </div>
+		            <div class="footer-weixin">
+		                <div class="bt-example-popover">
+		                    <div class="popover top">
+		                        <div class="arrow"></div>
+		                        <div style="padding: 7px">
+		                            <figure class="erweimaapp-logo-icon"></figure>
+		                        </div>
+		                    </div>
+		                </div>
+		                <figure class="shouji-logo-icon"></figure>
+		            </div>
+		        </div>
+		    </div>
+		</footer>
+		<!-- footer end -->
+		
+		<!-- 弹出微信框  -->
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		    <div class="modal-dialog modal-sm">
+		        <div class="modal-content" style="height: 580px;">
+		            <div style="width:580px; display: inline-block;">
+		                <div class="modal-header">
+		                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+		                </div>
+		                <div class="modal-body">
+		                    <figure class="pop-erweima">
+		                        <img src="../assets/image/erweima-app.svg" width="300" height="300" style="padding: 20px; border: 1px solid rgba(170, 170, 170, 0.3);">
+		                    </figure>
+		                    <div class="pop-erweima-text">
+		                        <p>请使用微信扫一扫</p>
+		                        <p>下载“途欢健康”App注册登录</p>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</body>
+
+</html>
